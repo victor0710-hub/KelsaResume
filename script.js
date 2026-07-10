@@ -278,6 +278,7 @@ let isAnimating = false;
 
 const content = document.getElementById("content");
 const heroImage = document.getElementById("heroImage");
+const imageArea = document.getElementById("imageArea");
 const tabs = document.querySelectorAll(".tab");
 
 const btnEN = document.getElementById("btnEN");
@@ -332,15 +333,14 @@ function changeSection(index) {
 
   isAnimating = true;
   content.classList.add("fade-out");
-  heroImage.style.opacity = "0";
-  heroImage.style.transform = "translateY(10px) scale(0.98)";
+  const imageTarget = imageArea || heroImage;
+  imageTarget.style.opacity = "0";
 
   setTimeout(() => {
     currentIndex = index;
     renderSection(currentIndex);
     content.classList.remove("fade-out");
-    heroImage.style.opacity = "1";
-    heroImage.style.transform = "translateY(0) scale(1)";
+    imageTarget.style.opacity = "1";
 
     setTimeout(() => {
       isAnimating = false;

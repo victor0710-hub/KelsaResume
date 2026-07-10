@@ -3,42 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kelsa Portfolio</title>
+  <title>Kanyawee Panyamang Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <main class="portfolio-shell">
-
     <aside class="sidebar">
-<div class="lang-switch">
-  <button id="btnEN" class="active">EN</button>
-  <button id="btnTH">TH</button>
-</div>
+      <div class="lang-switch">
+        <button id="btnEN" class="active" type="button">EN</button>
+        <button id="btnTH" type="button">TH</button>
+      </div>
 
       <img class="avatar" src="Assets/Avatar.png" alt="Profile photo" />
 
-<h1 id="sidebarName">Kelsa Name</h1>
-<p class="job-title" id="sidebarTitle">Quality Engineer</p>
+      <h1 id="sidebarName">Kanyawee Panyamang</h1>
+      <p class="job-title" id="sidebarTitle">Senior Officer - Quality Engineering</p>
 
-  <div class="contact-info">
-  <p class="contact-row">
-    <i data-lucide="phone"></i>
-    <span id="sidebarPhone">+66 93 124 6425</span>
-  </p>
+      <div class="contact-info">
+        <p class="contact-row">
+          <i data-lucide="phone"></i>
+          <span id="sidebarPhone">093-1246425</span>
+        </p>
 
-  <p class="contact-row">
-    <i data-lucide="mail"></i>
-    <span id="sidebarEmail">p.kanyawee.kawfang@gmail.com</span>
-  </p>
+        <p class="contact-row">
+          <i data-lucide="mail"></i>
+          <span id="sidebarEmail">p.kanyawee.kawfang@gmail.com</span>
+        </p>
 
-  <p class="contact-row">
-    <i data-lucide="map-pin"></i>
-    <span id="sidebarLocation">Bangkok, Thailand</span>
-  </p>
-</div>
-    <a class="download-btn" id="downloadCvBtn" href="Assets/Resume.pdf" download>Download CV</a>
+        <p class="contact-row">
+          <i data-lucide="map-pin"></i>
+          <span id="sidebarLocation">Bangkok, Thailand</span>
+        </p>
+      </div>
+
+      <a class="download-btn" id="downloadCvBtn" href="Assets/Resume.pdf" download>Download CV</a>
 
       <p class="copyright">© 2026 All rights reserved.</p>
     </aside>
@@ -48,27 +47,26 @@
         <!-- JavaScript fills this -->
       </div>
 
-   <img class="hero-image" id="heroImage" src="Assets/Photo1.jpeg" alt="Section photo" />
+      <div class="image-area" id="imageArea">
+        <img class="hero-image" id="heroImage" src="Assets/Photo1.jpeg" alt="Section photo" />
+      </div>
 
-      <nav class="side-tabs">
-        <button class="tab active" data-index="0" title="About"><i data-lucide="user"></i></button>
-        <button class="tab" data-index="1" title="Experience"><i data-lucide="briefcase"></i></button>
-        <button class="tab" data-index="2" title="Skills"><i data-lucide="settings"></i></button>
-        <button class="tab" data-index="3" title="Projects"><i data-lucide="folder"></i></button>
-        <button class="tab" data-index="4" title="Education"><i data-lucide="graduation-cap"></i></button>
-        <button class="tab" data-index="5" title="Contact"><i data-lucide="mail"></i></button>
-        <button class="tab" data-index="6" title="Hobbies"><i data-lucide="heart"></i></button>
+      <nav class="side-tabs" aria-label="Portfolio sections">
+        <button class="tab active" data-index="0" title="About" type="button"><i data-lucide="user"></i></button>
+        <button class="tab" data-index="1" title="Experience" type="button"><i data-lucide="briefcase"></i></button>
+        <button class="tab" data-index="2" title="Skills" type="button"><i data-lucide="settings"></i></button>
+        <button class="tab" data-index="3" title="Projects" type="button"><i data-lucide="folder"></i></button>
+        <button class="tab" data-index="4" title="Education" type="button"><i data-lucide="graduation-cap"></i></button>
+        <button class="tab" data-index="5" title="Contact" type="button"><i data-lucide="mail"></i></button>
+        <button class="tab" data-index="6" title="Hobbies" type="button"><i data-lucide="heart"></i></button>
       </nav>
     </section>
-
   </main>
-
 
   <audio id="backgroundMusic" src="Assets/background-music.mp3" loop preload="auto"></audio>
 
-<button id="musicToggle" class="music-toggle" type="button">
-  Music Off
-</button>
+  <button id="musicToggle" class="music-toggle" type="button">Music Off</button>
+
   <script src="script.js"></script>
 </body>
 </html>
